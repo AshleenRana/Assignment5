@@ -6,8 +6,14 @@ using System.Windows.Forms;
 
 namespace assignment5
 {
-    static class Program
+    public static class Program
     {
+        public static SplashScreen splashScreen;
+        public static StartForm startForm;
+        public static SelectForm selectForm;
+        public static ProductInfoForm productInfoForm;
+        public static OrderForm orderForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +22,14 @@ namespace assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+
+            splashScreen = new SplashScreen();
+            startForm = new StartForm();
+            orderForm = new OrderForm();
+            productInfoForm = new ProductInfoForm();
+            selectForm = new SelectForm();
+
+            Application.Run(splashScreen);
         }
     }
 }

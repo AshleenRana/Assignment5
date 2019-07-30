@@ -16,5 +16,14 @@ namespace assignment5
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// This is the event handler for startform closing event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
