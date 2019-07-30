@@ -1,6 +1,6 @@
 ﻿namespace assignment5
 {
-    partial class Form1
+    partial class StartForm
     {
         /// <summary>
         /// Required designer variable.
