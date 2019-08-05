@@ -25,5 +25,22 @@ namespace assignment5
         {
             Application.Exit();
         }
+
+        private void LoadSavedOrder_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void StartNewOrderButton_Click(object sender, EventArgs e)
+        {
+            Program.selectForm.Show();
+            this.Hide();
+        }
     }
 }
