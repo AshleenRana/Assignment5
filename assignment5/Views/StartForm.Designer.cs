@@ -1,4 +1,4 @@
-﻿namespace assignment5
+﻿namespace assignment5.Views
 {
     partial class StartForm
     {

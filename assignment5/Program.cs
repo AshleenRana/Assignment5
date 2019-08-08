@@ -1,4 +1,6 @@
-﻿using System;
+﻿using assignment5.Models;
+using assignment5.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +16,7 @@ namespace assignment5
         public static ProductInfoForm productInfoForm;
         public static OrderForm orderForm;
 
+        public static product Product;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -28,6 +31,8 @@ namespace assignment5
             orderForm = new OrderForm();
             productInfoForm = new ProductInfoForm();
             selectForm = new SelectForm();
+
+            Product = new product();
 
             Application.Run(splashScreen);
         }

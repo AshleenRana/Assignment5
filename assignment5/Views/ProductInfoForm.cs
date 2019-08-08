@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace assignment5
+namespace assignment5.Views
 {
-    public partial class SelectForm : Form
+    public partial class ProductInfoForm : Form
     {
-        public SelectForm()
+        public ProductInfoForm()
         {
             InitializeComponent();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
