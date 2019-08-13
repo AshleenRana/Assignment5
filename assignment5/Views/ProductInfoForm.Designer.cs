@@ -59,12 +59,21 @@
             this.ModelLabel = new System.Windows.Forms.Label();
             this.ModelDataLabel = new System.Windows.Forms.Label();
             this.TechSpecsGroupBos = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.MemoryLabel = new System.Windows.Forms.Label();
+            this.BrandLabel = new System.Windows.Forms.Label();
+            this.CPUModelLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.SelectAnotherProductButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
@@ -339,11 +348,17 @@
             // 
             // TechSpecsGroupBos
             // 
+            this.TechSpecsGroupBos.Controls.Add(this.CPUModelLabel);
+            this.TechSpecsGroupBos.Controls.Add(this.BrandLabel);
             this.TechSpecsGroupBos.Controls.Add(this.label5);
             this.TechSpecsGroupBos.Controls.Add(this.label4);
             this.TechSpecsGroupBos.Controls.Add(this.label3);
+            this.TechSpecsGroupBos.Controls.Add(this.MemoryLabel);
             this.TechSpecsGroupBos.Controls.Add(this.label8);
             this.TechSpecsGroupBos.Controls.Add(this.label7);
+            this.TechSpecsGroupBos.Controls.Add(this.label11);
+            this.TechSpecsGroupBos.Controls.Add(this.label10);
+            this.TechSpecsGroupBos.Controls.Add(this.label9);
             this.TechSpecsGroupBos.Controls.Add(this.label6);
             this.TechSpecsGroupBos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TechSpecsGroupBos.Location = new System.Drawing.Point(12, 275);
@@ -353,35 +368,35 @@
             this.TechSpecsGroupBos.TabStop = false;
             this.TechSpecsGroupBos.Text = "Tech Specs";
             // 
-            // label3
+            // MemoryLabel
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Platform";
-            this.label3.Click += new System.EventHandler(this.PlatformLabel_Click);
+            this.MemoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MemoryLabel.Location = new System.Drawing.Point(6, 48);
+            this.MemoryLabel.Name = "MemoryLabel";
+            this.MemoryLabel.Size = new System.Drawing.Size(125, 29);
+            this.MemoryLabel.TabIndex = 2;
+            this.MemoryLabel.Text = "Memory";
+            this.MemoryLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
             // 
-            // label4
+            // BrandLabel
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 29);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Platform";
-            this.label4.Click += new System.EventHandler(this.PlatformLabel_Click);
+            this.BrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrandLabel.Location = new System.Drawing.Point(6, 90);
+            this.BrandLabel.Name = "BrandLabel";
+            this.BrandLabel.Size = new System.Drawing.Size(125, 29);
+            this.BrandLabel.TabIndex = 2;
+            this.BrandLabel.Text = "CPU Brand";
+            this.BrandLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
             // 
-            // label5
+            // CPUModelLabel
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 131);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 29);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Platform";
-            this.label5.Click += new System.EventHandler(this.PlatformLabel_Click);
+            this.CPUModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPUModelLabel.Location = new System.Drawing.Point(6, 131);
+            this.CPUModelLabel.Name = "CPUModelLabel";
+            this.CPUModelLabel.Size = new System.Drawing.Size(125, 29);
+            this.CPUModelLabel.TabIndex = 2;
+            this.CPUModelLabel.Text = "CPU Model";
+            this.CPUModelLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
             // 
             // label6
             // 
@@ -410,11 +425,102 @@
             this.label8.Size = new System.Drawing.Size(121, 29);
             this.label8.TabIndex = 3;
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(268, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 29);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Memory";
+            this.label3.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(268, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 29);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Memory";
+            this.label4.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(268, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 29);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Memory";
+            this.label5.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(380, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(121, 29);
+            this.label9.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(380, 87);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(121, 29);
+            this.label10.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(380, 129);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(121, 29);
+            this.label11.TabIndex = 3;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Location = new System.Drawing.Point(527, 461);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(110, 42);
+            this.CancelButton.TabIndex = 6;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            // 
+            // NextButton
+            // 
+            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.Location = new System.Drawing.Point(653, 461);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(110, 42);
+            this.NextButton.TabIndex = 6;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            // 
+            // SelectAnotherProductButton
+            // 
+            this.SelectAnotherProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectAnotherProductButton.Location = new System.Drawing.Point(266, 461);
+            this.SelectAnotherProductButton.Name = "SelectAnotherProductButton";
+            this.SelectAnotherProductButton.Size = new System.Drawing.Size(235, 42);
+            this.SelectAnotherProductButton.TabIndex = 6;
+            this.SelectAnotherProductButton.Text = "Select Another Product";
+            this.SelectAnotherProductButton.UseVisualStyleBackColor = true;
+            this.SelectAnotherProductButton.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.NextButton);
+            this.Controls.Add(this.SelectAnotherProductButton);
+            this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.TechSpecsGroupBos);
             this.Controls.Add(this.ProductInfoGroupBox);
             this.Controls.Add(this.CostDataLabel);
@@ -477,11 +583,20 @@
         private System.Windows.Forms.Label ModelDataLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox TechSpecsGroupBos;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label CPUModelLabel;
+        private System.Windows.Forms.Label BrandLabel;
+        private System.Windows.Forms.Label MemoryLabel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button SelectAnotherProductButton;
     }
 }

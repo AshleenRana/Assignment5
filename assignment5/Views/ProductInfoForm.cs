@@ -36,5 +36,10 @@ namespace assignment5.Views
         {
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
