@@ -42,8 +42,33 @@
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.ProductIDLabel = new System.Windows.Forms.Label();
+            this.ProductIDDataLabel = new System.Windows.Forms.Label();
+            this.ConditionLabel = new System.Windows.Forms.Label();
+            this.ConditionDataLabel = new System.Windows.Forms.Label();
+            this.CostLabel = new System.Windows.Forms.Label();
+            this.CostDataLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.PlatformLabel = new System.Windows.Forms.Label();
+            this.PlatformDataLabel = new System.Windows.Forms.Label();
+            this.OSLabel = new System.Windows.Forms.Label();
+            this.OSDataLabel = new System.Windows.Forms.Label();
+            this.ManufacturerLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ModelLabel = new System.Windows.Forms.Label();
+            this.ModelDataLabel = new System.Windows.Forms.Label();
+            this.TechSpecsGroupBos = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.ProductInfoGroupBox.SuspendLayout();
+            this.TechSpecsGroupBos.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -157,11 +182,248 @@
             this.helpToolStripButton.Size = new System.Drawing.Size(29, 24);
             this.helpToolStripButton.Text = "He&lp";
             // 
+            // ProductIDLabel
+            // 
+            this.ProductIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductIDLabel.Location = new System.Drawing.Point(12, 76);
+            this.ProductIDLabel.Name = "ProductIDLabel";
+            this.ProductIDLabel.Size = new System.Drawing.Size(125, 29);
+            this.ProductIDLabel.TabIndex = 2;
+            this.ProductIDLabel.Text = "Product ID";
+            // 
+            // ProductIDDataLabel
+            // 
+            this.ProductIDDataLabel.BackColor = System.Drawing.Color.White;
+            this.ProductIDDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductIDDataLabel.Location = new System.Drawing.Point(143, 76);
+            this.ProductIDDataLabel.Name = "ProductIDDataLabel";
+            this.ProductIDDataLabel.Size = new System.Drawing.Size(102, 29);
+            this.ProductIDDataLabel.TabIndex = 3;
+            // 
+            // ConditionLabel
+            // 
+            this.ConditionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConditionLabel.Location = new System.Drawing.Point(261, 76);
+            this.ConditionLabel.Name = "ConditionLabel";
+            this.ConditionLabel.Size = new System.Drawing.Size(125, 29);
+            this.ConditionLabel.TabIndex = 2;
+            this.ConditionLabel.Text = "Condition";
+            // 
+            // ConditionDataLabel
+            // 
+            this.ConditionDataLabel.BackColor = System.Drawing.Color.White;
+            this.ConditionDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConditionDataLabel.Location = new System.Drawing.Point(392, 76);
+            this.ConditionDataLabel.Name = "ConditionDataLabel";
+            this.ConditionDataLabel.Size = new System.Drawing.Size(102, 29);
+            this.ConditionDataLabel.TabIndex = 3;
+            // 
+            // CostLabel
+            // 
+            this.CostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CostLabel.Location = new System.Drawing.Point(512, 73);
+            this.CostLabel.Name = "CostLabel";
+            this.CostLabel.Size = new System.Drawing.Size(125, 29);
+            this.CostLabel.TabIndex = 2;
+            this.CostLabel.Text = "Cost";
+            // 
+            // CostDataLabel
+            // 
+            this.CostDataLabel.BackColor = System.Drawing.Color.White;
+            this.CostDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CostDataLabel.Location = new System.Drawing.Point(609, 76);
+            this.CostDataLabel.Name = "CostDataLabel";
+            this.CostDataLabel.Size = new System.Drawing.Size(102, 29);
+            this.CostDataLabel.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(392, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 29);
+            this.label2.TabIndex = 3;
+            // 
+            // ProductInfoGroupBox
+            // 
+            this.ProductInfoGroupBox.Controls.Add(this.ModelLabel);
+            this.ProductInfoGroupBox.Controls.Add(this.OSLabel);
+            this.ProductInfoGroupBox.Controls.Add(this.ManufacturerLabel);
+            this.ProductInfoGroupBox.Controls.Add(this.PlatformLabel);
+            this.ProductInfoGroupBox.Controls.Add(this.ModelDataLabel);
+            this.ProductInfoGroupBox.Controls.Add(this.OSDataLabel);
+            this.ProductInfoGroupBox.Controls.Add(this.label1);
+            this.ProductInfoGroupBox.Controls.Add(this.PlatformDataLabel);
+            this.ProductInfoGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductInfoGroupBox.Location = new System.Drawing.Point(12, 127);
+            this.ProductInfoGroupBox.Name = "ProductInfoGroupBox";
+            this.ProductInfoGroupBox.Size = new System.Drawing.Size(760, 142);
+            this.ProductInfoGroupBox.TabIndex = 4;
+            this.ProductInfoGroupBox.TabStop = false;
+            this.ProductInfoGroupBox.Text = "Product Info";
+            // 
+            // PlatformLabel
+            // 
+            this.PlatformLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlatformLabel.Location = new System.Drawing.Point(15, 45);
+            this.PlatformLabel.Name = "PlatformLabel";
+            this.PlatformLabel.Size = new System.Drawing.Size(125, 29);
+            this.PlatformLabel.TabIndex = 2;
+            this.PlatformLabel.Text = "Platform";
+            this.PlatformLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // PlatformDataLabel
+            // 
+            this.PlatformDataLabel.BackColor = System.Drawing.Color.White;
+            this.PlatformDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlatformDataLabel.Location = new System.Drawing.Point(157, 45);
+            this.PlatformDataLabel.Name = "PlatformDataLabel";
+            this.PlatformDataLabel.Size = new System.Drawing.Size(121, 29);
+            this.PlatformDataLabel.TabIndex = 3;
+            // 
+            // OSLabel
+            // 
+            this.OSLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OSLabel.Location = new System.Drawing.Point(288, 45);
+            this.OSLabel.Name = "OSLabel";
+            this.OSLabel.Size = new System.Drawing.Size(74, 29);
+            this.OSLabel.TabIndex = 2;
+            this.OSLabel.Text = "OS";
+            // 
+            // OSDataLabel
+            // 
+            this.OSDataLabel.BackColor = System.Drawing.Color.White;
+            this.OSDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OSDataLabel.Location = new System.Drawing.Point(368, 45);
+            this.OSDataLabel.Name = "OSDataLabel";
+            this.OSDataLabel.Size = new System.Drawing.Size(369, 29);
+            this.OSDataLabel.TabIndex = 3;
+            // 
+            // ManufacturerLabel
+            // 
+            this.ManufacturerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManufacturerLabel.Location = new System.Drawing.Point(6, 99);
+            this.ManufacturerLabel.Name = "ManufacturerLabel";
+            this.ManufacturerLabel.Size = new System.Drawing.Size(158, 29);
+            this.ManufacturerLabel.TabIndex = 2;
+            this.ManufacturerLabel.Text = "Manufacturer";
+            this.ManufacturerLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 29);
+            this.label1.TabIndex = 3;
+            // 
+            // ModelLabel
+            // 
+            this.ModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModelLabel.Location = new System.Drawing.Point(284, 96);
+            this.ModelLabel.Name = "ModelLabel";
+            this.ModelLabel.Size = new System.Drawing.Size(74, 29);
+            this.ModelLabel.TabIndex = 2;
+            this.ModelLabel.Text = "Model";
+            // 
+            // ModelDataLabel
+            // 
+            this.ModelDataLabel.BackColor = System.Drawing.Color.White;
+            this.ModelDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModelDataLabel.Location = new System.Drawing.Point(368, 91);
+            this.ModelDataLabel.Name = "ModelDataLabel";
+            this.ModelDataLabel.Size = new System.Drawing.Size(369, 29);
+            this.ModelDataLabel.TabIndex = 3;
+            // 
+            // TechSpecsGroupBos
+            // 
+            this.TechSpecsGroupBos.Controls.Add(this.label5);
+            this.TechSpecsGroupBos.Controls.Add(this.label4);
+            this.TechSpecsGroupBos.Controls.Add(this.label3);
+            this.TechSpecsGroupBos.Controls.Add(this.label8);
+            this.TechSpecsGroupBos.Controls.Add(this.label7);
+            this.TechSpecsGroupBos.Controls.Add(this.label6);
+            this.TechSpecsGroupBos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TechSpecsGroupBos.Location = new System.Drawing.Point(12, 275);
+            this.TechSpecsGroupBos.Name = "TechSpecsGroupBos";
+            this.TechSpecsGroupBos.Size = new System.Drawing.Size(760, 171);
+            this.TechSpecsGroupBos.TabIndex = 5;
+            this.TechSpecsGroupBos.TabStop = false;
+            this.TechSpecsGroupBos.Text = "Tech Specs";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 29);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Platform";
+            this.label3.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 29);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Platform";
+            this.label4.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 29);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Platform";
+            this.label5.Click += new System.EventHandler(this.PlatformLabel_Click);
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(131, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(121, 29);
+            this.label6.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(131, 87);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(121, 29);
+            this.label7.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(131, 131);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 29);
+            this.label8.TabIndex = 3;
+            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.TechSpecsGroupBos);
+            this.Controls.Add(this.ProductInfoGroupBox);
+            this.Controls.Add(this.CostDataLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ConditionDataLabel);
+            this.Controls.Add(this.ProductIDDataLabel);
+            this.Controls.Add(this.CostLabel);
+            this.Controls.Add(this.ConditionLabel);
+            this.Controls.Add(this.ProductIDLabel);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,6 +438,8 @@
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.ProductInfoGroupBox.ResumeLayout(false);
+            this.TechSpecsGroupBos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +460,28 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
+        private System.Windows.Forms.Label ProductIDLabel;
+        private System.Windows.Forms.Label ProductIDDataLabel;
+        private System.Windows.Forms.Label ConditionLabel;
+        private System.Windows.Forms.Label ConditionDataLabel;
+        private System.Windows.Forms.Label CostLabel;
+        private System.Windows.Forms.Label CostDataLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox ProductInfoGroupBox;
+        private System.Windows.Forms.Label OSLabel;
+        private System.Windows.Forms.Label PlatformLabel;
+        private System.Windows.Forms.Label OSDataLabel;
+        private System.Windows.Forms.Label PlatformDataLabel;
+        private System.Windows.Forms.Label ModelLabel;
+        private System.Windows.Forms.Label ManufacturerLabel;
+        private System.Windows.Forms.Label ModelDataLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox TechSpecsGroupBos;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
