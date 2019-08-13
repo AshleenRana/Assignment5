@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,15 @@ namespace assignment5.Views
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void SaveCtrlSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using(StreamWriter.outputString = new StreamWriter("Product.txt"))
+            {
+
+            }
+            
         }
     }
 }

@@ -27,5 +27,27 @@ namespace assignment5.Views
                 productBindingSource.DataSource = db.products.Local.ToBindingList();
             }
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ProductDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+
+            var rowIndex = ProductDataGridView.CurrentCell.RowIndex;
+            var currentRow = ProductDataGridView.Rows[rowIndex];
+            var cost = currentRow.Cells[1].Value.ToString();
+            var manufacturer = currentRow.Cells[2].Value.ToString();
+            var model = currentRow.Cells[3].Value.ToString();
+
+            string outputstring = manufacturer + " " + model + "  $" + cost;
+
+            SelectionLabel.Text = outputstring;
+            
+            
+        }
+        
     }
 }

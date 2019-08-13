@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Models\DollarComputersContext.cs" />
     <Compile Include="Models\product.cs" />
+    <Compile Include="Products.cs" />
     <Compile Include="Views\OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
