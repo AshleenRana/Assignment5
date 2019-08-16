@@ -25,10 +25,7 @@ namespace assignment5.Views
 
         private void SaveCtrlSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using(StreamWriter.outputString = new StreamWriter("Product.txt"))
-            {
-
-            }
+           
             
         }
 
@@ -38,6 +35,16 @@ namespace assignment5.Views
         }
 
         private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
         {
 
         }

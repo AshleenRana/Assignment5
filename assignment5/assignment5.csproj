@@ -58,6 +58,12 @@
     <Compile Include="Models\DollarComputersContext.cs" />
     <Compile Include="Models\product.cs" />
     <Compile Include="Products.cs" />
+    <Compile Include="Views\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
