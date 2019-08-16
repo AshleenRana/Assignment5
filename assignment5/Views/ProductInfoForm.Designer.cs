@@ -55,7 +55,7 @@
             this.PlatformLabel = new System.Windows.Forms.Label();
             this.ModelDataLabel = new System.Windows.Forms.Label();
             this.OSDataLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ManufacturerDataLabel = new System.Windows.Forms.Label();
             this.PlatformDataLabel = new System.Windows.Forms.Label();
             this.TechSpecsGroupBos = new System.Windows.Forms.GroupBox();
             this.CPUModelLabel = new System.Windows.Forms.Label();
@@ -64,12 +64,12 @@
             this.CPUNumberLabel = new System.Windows.Forms.Label();
             this.HDDLabel = new System.Windows.Forms.Label();
             this.MemoryLabel = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.CPUMODELdataLAbel = new System.Windows.Forms.Label();
+            this.CPUBrandDataLabel = new System.Windows.Forms.Label();
             this.CPUSpeedDataLabel = new System.Windows.Forms.Label();
             this.CPUNoDataLabel = new System.Windows.Forms.Label();
             this.LCDSizeDataLabel = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.MemoryDataLabel = new System.Windows.Forms.Label();
             this.CancelButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.SelectAnotherProductButton = new System.Windows.Forms.Button();
@@ -258,7 +258,7 @@
             this.ProductInfoGroupBox.Controls.Add(this.PlatformLabel);
             this.ProductInfoGroupBox.Controls.Add(this.ModelDataLabel);
             this.ProductInfoGroupBox.Controls.Add(this.OSDataLabel);
-            this.ProductInfoGroupBox.Controls.Add(this.label1);
+            this.ProductInfoGroupBox.Controls.Add(this.ManufacturerDataLabel);
             this.ProductInfoGroupBox.Controls.Add(this.PlatformDataLabel);
             this.ProductInfoGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductInfoGroupBox.Location = new System.Drawing.Point(12, 127);
@@ -322,14 +322,14 @@
             this.OSDataLabel.Size = new System.Drawing.Size(369, 29);
             this.OSDataLabel.TabIndex = 3;
             // 
-            // label1
+            // ManufacturerDataLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(157, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 29);
-            this.label1.TabIndex = 3;
+            this.ManufacturerDataLabel.BackColor = System.Drawing.Color.White;
+            this.ManufacturerDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManufacturerDataLabel.Location = new System.Drawing.Point(157, 96);
+            this.ManufacturerDataLabel.Name = "ManufacturerDataLabel";
+            this.ManufacturerDataLabel.Size = new System.Drawing.Size(121, 29);
+            this.ManufacturerDataLabel.TabIndex = 3;
             // 
             // PlatformDataLabel
             // 
@@ -351,15 +351,15 @@
             this.TechSpecsGroupBos.Controls.Add(this.GPUTypeLabel);
             this.TechSpecsGroupBos.Controls.Add(this.HDDLabel);
             this.TechSpecsGroupBos.Controls.Add(this.MemoryLabel);
-            this.TechSpecsGroupBos.Controls.Add(this.label8);
-            this.TechSpecsGroupBos.Controls.Add(this.label7);
+            this.TechSpecsGroupBos.Controls.Add(this.CPUMODELdataLAbel);
+            this.TechSpecsGroupBos.Controls.Add(this.CPUBrandDataLabel);
             this.TechSpecsGroupBos.Controls.Add(this.CPUSpeedDataLabel);
             this.TechSpecsGroupBos.Controls.Add(this.WebCamDataLabel);
             this.TechSpecsGroupBos.Controls.Add(this.GPUTypeDataLabel);
             this.TechSpecsGroupBos.Controls.Add(this.CPUNoDataLabel);
             this.TechSpecsGroupBos.Controls.Add(this.HDDDataLabel);
             this.TechSpecsGroupBos.Controls.Add(this.LCDSizeDataLabel);
-            this.TechSpecsGroupBos.Controls.Add(this.label6);
+            this.TechSpecsGroupBos.Controls.Add(this.MemoryDataLabel);
             this.TechSpecsGroupBos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TechSpecsGroupBos.Location = new System.Drawing.Point(12, 275);
             this.TechSpecsGroupBos.Name = "TechSpecsGroupBos";
@@ -422,23 +422,23 @@
             this.MemoryLabel.TabIndex = 2;
             this.MemoryLabel.Text = "Memory";
             // 
-            // label8
+            // CPUMODELdataLAbel
             // 
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(131, 131);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 29);
-            this.label8.TabIndex = 3;
+            this.CPUMODELdataLAbel.BackColor = System.Drawing.Color.White;
+            this.CPUMODELdataLAbel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPUMODELdataLAbel.Location = new System.Drawing.Point(131, 131);
+            this.CPUMODELdataLAbel.Name = "CPUMODELdataLAbel";
+            this.CPUMODELdataLAbel.Size = new System.Drawing.Size(121, 29);
+            this.CPUMODELdataLAbel.TabIndex = 3;
             // 
-            // label7
+            // CPUBrandDataLabel
             // 
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(131, 87);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 29);
-            this.label7.TabIndex = 3;
+            this.CPUBrandDataLabel.BackColor = System.Drawing.Color.White;
+            this.CPUBrandDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPUBrandDataLabel.Location = new System.Drawing.Point(131, 87);
+            this.CPUBrandDataLabel.Name = "CPUBrandDataLabel";
+            this.CPUBrandDataLabel.Size = new System.Drawing.Size(121, 29);
+            this.CPUBrandDataLabel.TabIndex = 3;
             // 
             // CPUSpeedDataLabel
             // 
@@ -467,14 +467,14 @@
             this.LCDSizeDataLabel.Size = new System.Drawing.Size(121, 29);
             this.LCDSizeDataLabel.TabIndex = 3;
             // 
-            // label6
+            // MemoryDataLabel
             // 
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(131, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 29);
-            this.label6.TabIndex = 3;
+            this.MemoryDataLabel.BackColor = System.Drawing.Color.White;
+            this.MemoryDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MemoryDataLabel.Location = new System.Drawing.Point(131, 45);
+            this.MemoryDataLabel.Name = "MemoryDataLabel";
+            this.MemoryDataLabel.Size = new System.Drawing.Size(121, 29);
+            this.MemoryDataLabel.TabIndex = 3;
             // 
             // CancelButton
             // 
@@ -507,7 +507,7 @@
             this.SelectAnotherProductButton.TabIndex = 6;
             this.SelectAnotherProductButton.Text = "Select Another Product";
             this.SelectAnotherProductButton.UseVisualStyleBackColor = true;
-            this.SelectAnotherProductButton.Click += new System.EventHandler(this.Button1_Click);
+            this.SelectAnotherProductButton.Click += new System.EventHandler(this.SelectAnotherProductButton_Click);
             // 
             // label3
             // 
@@ -589,6 +589,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Info Form";
+            this.Activated += new System.EventHandler(this.ProductInfoForm_Activated);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -629,14 +630,14 @@
         private System.Windows.Forms.Label ModelLabel;
         private System.Windows.Forms.Label ManufacturerLabel;
         private System.Windows.Forms.Label ModelDataLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ManufacturerDataLabel;
         private System.Windows.Forms.GroupBox TechSpecsGroupBos;
         private System.Windows.Forms.Label CPUModelLabel;
         private System.Windows.Forms.Label BrandLabel;
         private System.Windows.Forms.Label MemoryLabel;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label CPUMODELdataLAbel;
+        private System.Windows.Forms.Label CPUBrandDataLabel;
+        private System.Windows.Forms.Label MemoryDataLabel;
         private System.Windows.Forms.Label CPUSpeedLabel;
         private System.Windows.Forms.Label CPUNumberLabel;
         private System.Windows.Forms.Label HDDLabel;
