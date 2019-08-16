@@ -29,11 +29,6 @@ namespace assignment5.Views
             
         }
 
-        private void PlatformLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
 
@@ -46,7 +41,13 @@ namespace assignment5.Views
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.orderForm.Show();
         }
     }
 }

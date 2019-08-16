@@ -48,7 +48,6 @@
             this.ConditionDataLabel = new System.Windows.Forms.Label();
             this.CostLabel = new System.Windows.Forms.Label();
             this.CostDataLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.ModelLabel = new System.Windows.Forms.Label();
             this.OSLabel = new System.Windows.Forms.Label();
@@ -94,7 +93,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(929, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(932, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -155,7 +154,7 @@
             this.helpToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(929, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(932, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -230,7 +229,7 @@
             this.ConditionDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConditionDataLabel.Location = new System.Drawing.Point(392, 76);
             this.ConditionDataLabel.Name = "ConditionDataLabel";
-            this.ConditionDataLabel.Size = new System.Drawing.Size(102, 29);
+            this.ConditionDataLabel.Size = new System.Drawing.Size(187, 29);
             this.ConditionDataLabel.TabIndex = 3;
             // 
             // CostLabel
@@ -250,16 +249,6 @@
             this.CostDataLabel.Name = "CostDataLabel";
             this.CostDataLabel.Size = new System.Drawing.Size(140, 29);
             this.CostDataLabel.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(423, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // ProductInfoGroupBox
             // 
@@ -305,7 +294,6 @@
             this.ManufacturerLabel.Size = new System.Drawing.Size(158, 29);
             this.ManufacturerLabel.TabIndex = 2;
             this.ManufacturerLabel.Text = "Manufacturer";
-            this.ManufacturerLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
             // 
             // PlatformLabel
             // 
@@ -315,7 +303,6 @@
             this.PlatformLabel.Size = new System.Drawing.Size(125, 29);
             this.PlatformLabel.TabIndex = 2;
             this.PlatformLabel.Text = "Platform";
-            this.PlatformLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
             // 
             // ModelDataLabel
             // 
@@ -509,6 +496,7 @@
             this.NextButton.TabIndex = 6;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SelectAnotherProductButton
             // 
@@ -538,7 +526,6 @@
             this.GPUTypeLabel.Size = new System.Drawing.Size(124, 29);
             this.GPUTypeLabel.TabIndex = 2;
             this.GPUTypeLabel.Text = "GPU Type";
-            this.GPUTypeLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
             // 
             // WebCamLabel
             // 
@@ -548,7 +535,6 @@
             this.WebCamLabel.Size = new System.Drawing.Size(124, 29);
             this.WebCamLabel.TabIndex = 2;
             this.WebCamLabel.Text = "WebCam";
-            this.WebCamLabel.Click += new System.EventHandler(this.PlatformLabel_Click);
             // 
             // HDDDataLabel
             // 
@@ -581,14 +567,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 561);
+            this.ClientSize = new System.Drawing.Size(932, 561);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SelectAnotherProductButton);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.TechSpecsGroupBos);
             this.Controls.Add(this.ProductInfoGroupBox);
             this.Controls.Add(this.CostDataLabel);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.ConditionDataLabel);
             this.Controls.Add(this.ProductIDDataLabel);
             this.Controls.Add(this.CostLabel);
@@ -636,7 +621,6 @@
         private System.Windows.Forms.Label ConditionDataLabel;
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.Label CostDataLabel;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox ProductInfoGroupBox;
         private System.Windows.Forms.Label OSLabel;
         private System.Windows.Forms.Label PlatformLabel;

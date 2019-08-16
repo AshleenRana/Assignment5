@@ -16,5 +16,21 @@ namespace assignment5
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.productInfoForm.Show();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FinishButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
